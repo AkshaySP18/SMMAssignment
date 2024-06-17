@@ -23,11 +23,16 @@ a {
     text-decoration: none;
     /* color: #fff; */
 }
+button:hover {
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
 /* First Page */
 
     .FirstPage {
         display: grid;
-        background: url(banner-bg.jpg);
+        background: url(images/images/banner-bg.jpg);
         border-radius: 0 0 21.875rem ; 
         height: 100vh;
         background-size: cover;
@@ -79,7 +84,6 @@ a {
         gap: 7rem;
         flex-wrap: nowrap;
         align-items: center;
-        
     }
 
     .navbar li, .navbar a {
@@ -107,7 +111,7 @@ a {
     .container1 section {
         display: grid;
         float: right;
-        background: url(banner-item-01.jpg);
+        background: url(images/images/banner-item-01.jpg);
         border-radius: 1.875rem;
         background-size: cover;
         width: 58%;
@@ -149,11 +153,6 @@ a {
 
     #Ourcourses a {
         color: #fff;
-    }
-
-    button:hover {
-        transform: scale(1.1);
-        transition: 1.2s;
     }
 
     .buttons {
@@ -236,12 +235,11 @@ a {
         border: 0;
         width: 50%;
     }
-
-    .Readmore:hover
+    /* .Readmore:hover
     {
         background-color: #6a5acd;
         color: #000000;
-    }
+    } */
 
     .icons {
         position: relative;
@@ -400,11 +398,11 @@ a {
         font-weight: bold;
     }
 
-    .about-us button:hover {
+    /* .about-us button:hover {
         text-decoration: none;
         color: #fff;
         background-color: #6a5acd;
-    }
+    } */
 
     .about-us button {
         display: grid;
@@ -418,11 +416,7 @@ a {
         width: 20%;
     }
 
-    .Readmore:hover
-    {
-        background-color: #6a5acd;
-        color: #000000;
-    }
+  
     /* .aboutuscontents
     {
         display: flex;

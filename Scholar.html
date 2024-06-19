@@ -7,22 +7,26 @@
     <link rel="stylesheet" type="text/css" href="Scholar.css">
 </head>
 <body>
-    <section class="FirstPage">
+    <!-- Home Section -->
+    <section id="FirstPage">
         <header>
             <div class="header">
                 <div class="subheader">
                     <div class="icon"><p>SCHOLAR</p></div><hr>
-                    <div class="searchbar"><input type="search" id="search" placeholder="Type Something"></div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Type something">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
                 <nav>
                     <div class="navbar">
                         <ul>
-                            <li id="Home"><a href="#">Home</a></li>
-                            <li id="Services"><a href="#">Service</a></li>
-                            <li id="Courses"><a href="#">Courses</a></li>
-                            <li id="Team"><a href="#">Team</a></li>
-                            <li id="Events"><a href="#">Events</a></li>
-                            <li id="Regitser"><a href="#">Register Now!</a></li>
+                            <li id="Home"><a href="#FirstPage">Home</a></li>
+                            <li id="Services"><a href="#SecondPage">Service</a></li>
+                            <li id="Courses"><a href="#ThirdPage">Courses</a></li>
+                            <li id="Team"><a href="#FourthPage">Team</a></li>
+                            <li id="Events"><a href="#FifthPage">Events</a></li>
+                            <li id="Regitser"><a href="#SixthPage">Register Now!</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -33,38 +37,52 @@
             <section>
                 <button id="Ourcourses"><a href="#">OUR COURSES</a></button>
                 <h1>With Scholar Teachers,<br>Everything Is Easier</h1>
-                <p>Scholor is free CSS template designed by TemplateMo for online educational related<br>websites. This slayout is based on the famous Bootstrap v5.3.0 framework.</p>
+                <p>Scholor is free CSS template designed by TemplateMo for online educational related websites. This slayout is based on the famous Bootstrap v5.3.0 framework.</p>
                 <div class="buttons">
                     <button id="RequestDemo"><a href="#">Request Demo</a></button>
-                    <div class="playbutton"><a href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.G2iNSTydiOpSgBM-uvNvjwHaHa&pid=Api&P=0&h=180"></a> What's Scholor?</div>
+                    <div class="play-button">
+                        <a href="#">
+                            <div class="triangle"></div>
+                        </a>
+                    </div>
+                    <div class="description">What's Scholor?</div>
                 </div>
             </section>
+            <div class="nextbutton">
+                <button class="backwardbutton"><a href="#"><</a></button>
+                <button class="forwardbutton"><a href="#">></a></button>
+            </div>
         </div>
     </section>
-    <section class="SecondPage">
+    <!-- Service Section -->
+    <section id="SecondPage">
         <div class="MainContainer1">
             <div class="subcontainer1">
-                <div class="icons"><img src="images/images/service-01.png" alt="Online Degrees Icon"></div>
-                <div class="grids" id="OnlineDegrees">
-                    <h1>Online Degrees</h1>
-                    <p>Whenever you need free templates in HTML, CSS, you just remember TemplateMo websites.</p>
-                    <button class="Readmore"><a href="#">Read More</a></button>
+                <div class="servicecard">
+                    <div class="icons"><img src="images/images/service-01.png" alt="Online Degrees Icon"></div>
+                    <div class="grids" id="OnlineDegrees">
+                        <h2>Online Degrees</h2>
+                        <p>Whenever you need free templates in HTML, CSS, you just remember TemplateMo websites.</p>
+                        <button class="Readmore"><a href="#">Read More</a></button>
+                    </div>
                 </div>
-                <div class="icons"><img src="images/images/service-02.png" alt="Short Courses Icon"></div>
-                <div class="grids" id="ShortCourses">
+                <div class="servicecard">
+                    <div class="icons"><img src="images/images/service-02.png" alt="Short Courses Icon"></div>
+                    <div class="grids" id="ShortCourses">
+                        <h2>Short Courses</h2>
+                        <p>You can browse free templates based on different tags such as digital marketing etc.</p>
+                        <button class="Readmore"><a href="#">Read More</a></button>
+                    </div>
+                </div>
+                <div class="servicecard">
+                    <div class="icons"><img src="images/images/service-03.png" alt="Web Experts Icon"></div>
+                    <div class="grids" id="WebExperts">
                     
-                    <h1>Short Courses</h1>
-                    <p>You can browse free templates based on different tags such as digital marketing etc.</p>
-                    <button class="Readmore"><a href="#">Read More</a></button>
+                        <h2>Web Experts</h2>
+                        <p>You can start learning HTML, CSS by modifying free templates from our websites too.</p>
+                        <button class="Readmore"><a href="#">Read More</a></button>
+                    </div>
                 </div>
-                <div class="icons"><img src="images/images/service-03.png" alt="Web Experts Icon"></div>
-                <div class="grids" id="WebExperts">
-                   
-                    <h1>Web Experts</h1>
-                    <p>You can start learning HTML, CSS by modifying free templates from our websites too.</p>
-                    <button class="Readmore"><a href="#">Read More</a></button>
-                </div>
-                
             </div>
         </div>
         <div class="MainContainer2">
@@ -73,37 +91,37 @@
                     <details class="faq-item">
                         <summary>
                             <span class="faq-question">Where shall we begin?</span>
-                            <span class="faq-toggle">+</span>
+                            <span class="faq-toggle"></span>
                         </summary>
                         <div class="faq-answer">
-                            Start by exploring our comprehensive courses and resources tailored to your needs.
+                            <p>Dolor <b>almesit amet</b>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span id="faq1">adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolere magna aliqua. Quis ipsum suspendissie ultrices gravida.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>
                             <span class="faq-question">How do we work together?</span>
-                            <span class="faq-toggle">+</span>
+                            <span class="faq-toggle"></span>
                         </summary>
                         <div class="faq-answer">
-                            Collaboration is key! We offer personalized support and guidance every step of the way.
+                            <p>Dolor <b>almesit amet</b>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span id="faq1">adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolere magna aliqua. Quis ipsum suspendissie ultrices gravida.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>
                             <span class="faq-question">Why SCHOLAR is the best?</span>
-                            <span class="faq-toggle">+</span>
+                            <span class="faq-toggle"></span>
                         </summary>
                         <div class="faq-answer">
-                            There are more than one hundred responsive HTML templates to choose from TemplateMo website.
+                        <p>There are more than one hundred responsive HTML templates to choose from <b>Template</b>Mo website. You can browse by diferent tags or categories.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>
                             <span class="faq-question">Do we get the best support?</span>
-                            <span class="faq-toggle">+</span>
+                            <span class="faq-toggle"></span>
                         </summary>
                         <div class="faq-answer">
-                            Yes, we provide 24/7 support to ensure you have the best learning experience possible.
+                        <p>Yes, we provide 24/7 support to ensure you have the best learning experience possible.</p>
                         </div>
                     </details>
                 </div>
@@ -118,13 +136,14 @@
             </section>
         </div>
     </section>
-    <section class="ThirdPage">
+    <!-- Courses Section -->
+    <section id="ThirdPage">
         <span>LATEST COURSES</span>
         <h1>Latest Courses</h1>
         <nav class="LatestCoursesNavbar">
             <ul>
                 <li><a href="#">Show All</a></li>
-                <li><a href="#">Webdesigns</a></li>
+                <li><a href="#">Webdesign</a></li>
                 <li><a href="#">Development</a></li>
                 <li><a href="#">Wordpress</a></li>
             </ul>
@@ -137,6 +156,7 @@
                     <span>Stella Blair</span>
                     <h3>Learn Web Design</h3>
                     <div class="courseprice"><p><sup>$</sup>160</p></div>
+                    <div class="coursetype"><span>WEBDESIGN</span></div>
                 </div>
             </div>
             
@@ -146,6 +166,7 @@
                     <span>Cindy Walker</span>
                     <h3>Web Development Tips</h3>
                     <div class="courseprice"><p><sup>$</sup>340</p></div>
+                    <div class="coursetype"><span>DEVELOPMENT</span></div>
                 </div>
             </div>
             
@@ -155,6 +176,7 @@
                     <span>David Huston</span>
                     <h3>Latest Web Trends</h3>
                     <div class="courseprice"><p><sup>$</sup>640</p></div>
+                    <div class="coursetype"><span>WORDPRESS</span></div>
                 </div>
             </div>
             
@@ -164,6 +186,7 @@
                     <span>Stella Blair</span>
                     <h3>Online Learning Steps</h3>
                     <div class="courseprice"><p><sup>$</sup>450</p></div>
+                    <div class="coursetype"><span>DEVELOPMENT</span></div>
                 </div>
             </div>
             
@@ -173,6 +196,7 @@
                     <span>Sophia Rose</span>
                     <h3>Be a WordPress Master</h3>
                     <div class="courseprice"><p><sup>$</sup>320</p></div>
+                    <div class="coursetype"><span>WORDPRESS</span></div>
                 </div>
             </div>
             
@@ -182,11 +206,13 @@
                     <span>David Huston</span>
                     <h3>Full Stack Developer</h3>
                     <div class="courseprice"><p><sup>$</sup>240</p></div>
+                    <div class="coursetype"><span>WEBDESIGN</span></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="ForthPage">
+    <!-- Team Section -->
+    <section id="FourthPage">
         <div class="Status">
             <div id="Happystudents">
                 <h1>150+</h1>
@@ -211,6 +237,11 @@
                 <div class="teacherdetails">
                     <span>UX Teacher</span>
                     <h1>Sophia Rose</h1>
+                    <div class="socialmediaicons">
+                        <div class="facebook"><img src="images/images/facebook-circle-svgrepo-com (1).png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/twitter-154-svgrepo-com.png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/linkedin-svgrepo-com.png" height="40rem"></div>
+                    </div>
                 </div>  
                 <div class="teacherimg"><img src="images/images/member-01.jpg"></div>              
             </div>
@@ -219,6 +250,11 @@
                 <div class="teacherdetails">
                     <span>Graphic Teacher</span>
                     <h1>Cindy Walker</h1>
+                    <div class="socialmediaicons">
+                        <div class="facebook"><img src="images/images/facebook-circle-svgrepo-com (1).png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/twitter-154-svgrepo-com.png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/linkedin-svgrepo-com.png" height="40rem"></div>
+                    </div>
                 </div>   
                 <div class="teacherimg"><img src="images/images/member-02.jpg"></div>             
             </div>
@@ -227,6 +263,11 @@
                 <div class="teacherdetails">
                     <span>Full Stack Master</span>
                     <h1>David Hutson</h1>
+                    <div class="socialmediaicons">
+                        <div class="facebook"><img src="images/images/facebook-circle-svgrepo-com (1).png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/twitter-154-svgrepo-com.png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/linkedin-svgrepo-com.png" height="40rem"></div>
+                    </div>
                 </div>
                 <div class="teacherimg"><img src="images/images/member-03.jpg"></div>                
             </div>
@@ -235,6 +276,11 @@
                 <div class="teacherdetails">
                     <span>Digital Animator</span>
                     <h1>Stella Blair</h1>
+                    <div class="socialmediaicons">
+                        <div class="facebook"><img src="images/images/facebook-circle-svgrepo-com (1).png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/twitter-154-svgrepo-com.png" height="40rem"></div>
+                        <div class="twitter"><img src="images/images/linkedin-svgrepo-com.png" height="40rem"></div>
+                    </div>
                 </div>
                 <div class="teacherimg"><img src="images/images/member-04.jpg"></div>
             </div>
@@ -255,16 +301,21 @@
                     </div>
                 </div>
                 <div class="testimonialdescptn">
-                    <span>Testimonials</span>
+                    <span>TESTIMONIALS</span>
                     <h1>What They Say About Us?</h1>
                     <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color etc.</p>
+                </div>
+                <div class="nextcardbutton">
+                    <button class="forwardbutton"><a href="#"><</a></button>
+                    <button class="backwardbutton"><a href="#">></a></button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="FifthPage">
+    <!-- Events Section -->
+    <section id="FifthPage">
         <div class="Schedule">
-            <span>Schedule</span>
+            <span>SCHEDULE</span>
             <h1>Upcoming Events</h1>
         </div>
         <div class="Eventcards">
@@ -287,6 +338,7 @@
                         <p>Price</p>
                         <span>$120</span>
                     </div>
+                    <button class="eventnextbutton"><a href="#">></a></button>
                 </div>
             </div>
             <div class="Event">
@@ -308,6 +360,7 @@
                         <p>Price</p>
                         <span>$320</span>
                     </div>
+                    <button class="eventnextbutton"><a href="#">></a></button>
                 </div>
             </div>
             <div class="Event">
@@ -329,9 +382,37 @@
                         <p>Price</p>
                         <span>$440</span>
                     </div>
+                    <button class="eventnextbutton"><a href="#">></a></button>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Register Now! Section -->
+    <section id="SixthPage">
+        <div class="contactus">
+            <div class="contactusdescription">
+                <div class="contactuscontent">
+                    <span>CONTACT US</span>
+                    <h2>Feel Free To Contact Us Anytime</h2>
+                    <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
+                </div>
+                <div class="Specialoffer">
+                    <div class="offericon"><p>OFF</p><h3>50%</h3></div>
+                    <div class="validity"><p>Valid: <span>24 April 2036</span></p><h3>Special Offer <span>50%</span> OFF!</h3></div>
+                    <button class="nexticon"><a href="#">></a></button>
+                </div>
+            </div>
+            <form class="Feedbackform">
+                <input type="text" placeholder="Your Name...">
+                <input type="email" placeholder="Your E-mail...">
+                <textarea rows="10" cols="17" placeholder="Your Message"></textarea>
+                <button class="submit"><span>Send Message Now</span></button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>Copyright &copy; 2036 Scholar Organization. All rights reserves. &nbsp Design: TemplateMo</p></footer>
+            </div>
+        </section>
 </body>
 </html>
